@@ -1,0 +1,188 @@
+.contact {
+  background: $blue-dark;
+  @include breakpoint-up("large") {
+    padding: 0 3rem;
+  }
+  @include breakpoint-up("xlarge") {
+    padding: 0 12rem;
+  }
+
+  .title-section {
+    color: $white;
+    margin-bottom: 0;
+    @include breakpoint-up("medium") {
+      margin-bottom: 1rem;
+    }
+  }
+  &__container {
+    @include breakpoint-up("medium") {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 5rem;
+    }
+    @include breakpoint-up("large") {
+      justify-content: center;
+    }
+    .contact__info {
+      text-align: center;
+      @include breakpoint-up("medium") {
+        margin-left: 2rem;
+      }
+      @include breakpoint-up("large") {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-left: 2.5rem;
+      }
+      img {
+        width: 100%;
+        @include breakpoint-up("small") {
+          height: 26rem;
+          width: 26rem;
+          object-fit: cover;
+        }
+        @include breakpoint-up("large") {
+          height: 30rem;
+          width: 36rem;
+        }
+      }
+      .info {
+        padding: 0 3.75rem;
+        p {
+          display: flex;
+          align-items: center;
+          color: $white;
+          margin-bottom: 0.4rem;
+          font-weight: 300;
+          font-size: 0.875rem;
+          @include breakpoint-up("small") {
+            font-size: 1rem;
+          }
+          @include breakpoint-up("large") {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+          }
+          span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: $blue;
+            border-radius: 50%;
+            margin-right: 0.7rem;
+            @include breakpoint-up("large") {
+              width: 2.9rem;
+              height: 2.9rem;
+            }
+          }
+        }
+      }
+    }
+    .contact__form {
+      margin: 2rem 3rem 0 3rem;
+      @include breakpoint-up("medium") {
+        margin: 0;
+        width: 45%;
+      }
+      @include breakpoint-up("large") {
+        width: 25rem;
+      }
+      @include breakpoint-up("xlarge") {
+        width: 34rem;
+      }
+      h3 {
+        color: $blue;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        @include breakpoint-up("small") {
+          font-size: 1.8rem;
+        }
+        @include breakpoint-up("medium") {
+          text-align: left;
+        }
+      }
+      .form {
+        color: white;
+        &__group {
+          position: relative;
+          margin-bottom: 2rem;
+          label {
+            position: absolute;
+            background: $blue-dark;
+            top: -0.6rem;
+            left: 2rem;
+            font-size: 0.75rem;
+            padding: 0 0.56rem;
+            font-weight: bold;
+            .required {
+              color: $blue;
+            }
+          }
+          input,
+          textarea {
+            background: transparent;
+            padding: 0 2rem;
+            border: 1px solid #aaabb8;
+            width: 100%;
+            border-radius: 2rem;
+            outline: none;
+            @include breakpoint-up("small") {
+              font-size: 1rem;
+            }
+            @include breakpoint-up("large") {
+              font-size: 1.2rem;
+            }
+          }
+          input {
+            height: 4rem;
+            color: $white;
+            margin-bottom: 0.2rem;
+            @include breakpoint-up("large") {
+              height: 5rem;
+              border-radius: 2.5rem;
+            }
+          }
+          small {
+            color: $red;
+            margin-left: 0.4rem;
+            display: none;
+            @include breakpoint-up("medium") {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+            @include breakpoint-up("xlarge") {
+              font-size: 1.1rem;
+              font-weight: 600;
+            }
+            &.showError {
+              display: block;
+            }
+          }
+          textarea {
+            color: $white;
+            padding-top: 1rem;
+            max-width: 100%;
+            min-width: 100%;
+            max-height: auto;
+          }
+          width: 100%;
+        }
+        .btn-send {
+          width: 100%;
+          height: 4rem;
+          margin-bottom: 5rem;
+          font-size: 1rem;
+          overflow: hidden;
+
+          &.submited {
+            pointer-events: none;
+            background: rgba(95, 179, 95, 0.747);
+            border: 1px solid rgba(95, 179, 95, 0.747);
+          }
+        }
+      }
+    }
+  }
+}

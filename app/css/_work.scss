@@ -1,0 +1,138 @@
+.work {
+  padding: 2rem 2.875rem;
+  text-align: center;
+  overflow: hidden;
+  @include breakpoint-up("medium") {
+    padding: 0 6.875rem;
+  }
+  @include breakpoint-up("xlarge") {
+    padding: 0 15.875rem;
+  }
+  &__info {
+    @include breakpoint-up("medium") {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 1rem;
+      @include breakpoint-up("medium") {
+        width: 57%;
+        object-fit: cover;
+      }
+      @include breakpoint-up("xlarge") {
+        width: 55%;
+        object-fit: cover;
+      }
+    }
+    .info {
+      @include breakpoint-up("large") {
+        text-align: left;
+        width: 45%;
+      }
+      h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        @include breakpoint-up("small") {
+          font-size: 2rem;
+        }
+        @include breakpoint-up("xlarge") {
+          font-size: 2.5rem;
+        }
+      }
+      p {
+        margin-bottom: 1.2rem;
+        @include breakpoint-up("small") {
+          font-size: 1.3rem;
+        }
+        @include breakpoint-up("xlarge") {
+          max-width: 38ch;
+        }
+      }
+      a {
+        color: black;
+        border: 1px solid black;
+        margin-bottom: 4rem;
+        @include breakpoint-up("small") {
+          margin-bottom: 6rem;
+        }
+        &:hover {
+          color: $white;
+          border: 1px solid $blue;
+        }
+        &:active {
+          border: 1px solid $blue;
+        }
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+    @include breakpoint-up("xlarge") {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .processes {
+    @include breakpoint-up("small") {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include breakpoint-up("medium") {
+      margin-bottom: 2rem;
+    }
+    @include breakpoint-up("xlarge") {
+      justify-content: center;
+      padding: 0 5rem 5rem 5rem;
+    }
+    .process {
+      padding: 2.1rem;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      @include breakpoint-up("small") {
+        padding: 1.5rem;
+        width: 17rem;
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+      @include breakpoint-up("medium") {
+        padding: 2rem;
+      }
+      @include breakpoint-up("large") {
+        padding: 2.5rem;
+        width: 22rem;
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+      }
+
+      img {
+        width: 4.375rem;
+        margin-bottom: 0.7rem;
+      }
+
+      h4 {
+        margin-bottom: 0.5rem;
+        color: $blue;
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.875rem;
+        text-align: left;
+        @include breakpoint-up("medium") {
+          font-size: 1rem;
+        }
+        @include breakpoint-up("large") {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bryan Maza - Portfolio</title>
+    <link rel="stylesheet" href="app/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel = "icon" href = 
+    "./app/images/logo.PNG" 
+            type = "image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <span class="nav__logo"> <a href="#home"> BJM</a></span>
+      <div class="nav__menu">
+        <ul>
+          <li class="menu-option active">
+            <a data-line="Home" href="#home">
+              <img src="./app/images/home.png" alt="home-option">
+              Home</a
+            >
+          </li>
+          <li class="menu-option">
+            <a data-line="About" href="#about">
+              <img src="./app/images/about.png" alt="about-option">
+              About</a
+            >
+          </li>
+          <li class="menu-option">
+            <a data-line="Skills" href="#skills">
+              <img src="./app/images/skills.png" alt="skills-option">
+
+              Skills</a
+            >
+          </li>
+          <li class="menu-option">
+            <a data-line="Projects" href="#projects">
+              <img src="./app/images/projects.png" alt="projects-option">
+
+              Projects</a
+            >
+          </li>
+          <li class="menu-option">
+            <a data-line="Contact" href="#contact">
+              <img src="./app/images/contact.png" alt="contact-option">
+              Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="btn-menu">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </button>
+    </nav>
+    <section class="hero-home" id="home">
+      <div class="cover">
+        <h3 class="cover-text hello"></h3>
+        <p class="cover-text name"></p>
+        <h2 class="cover-text cover__desc"></h2>
+      </div>
+      <a class="btn" href="#about">
+        Know me <i class="fas fa-chevron-right"></i>
+      </a>
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/BryanJairmz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/bryanjrmz/?hl=es"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a
+          href="https://es.linkedin.com/in/bryan-maza-79780a1b3"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a
+          href="https://github.com/BryanMaza"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+      <div class="scroll-down">
+        <p>Scroll down <i class="fas fa-long-arrow-alt-right fa-lg"></i></p>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h3 class="title-section">About me</h3>
+      <div class="about__info">
+        <div class="img-container" data-aos="fade-up">
+          <img src="app/images/avatar.svg" alt="" />
+        </div>
+        <div class="desc" data-aos="fade-up">
+          <h2>Who am I?</h2>
+          <p>
+            I am a front-end web developer. I love learn something new
+            every day,
+            new technologies, animations and visual effects. I
+            am currently looking for a company where I can continue to improve
+            my skills.
+          </p>
+          <p>
+            I'm happiest when I'm creating, learning, exploring and thinking
+            about how to make things better.
+          </p>
+          <a href="https://docdro.id/S9LYt9n" download="Curriculum_BryanMaza" target="_blank" class="btn btn-download">
+            Download CV <i class="fas fa-cloud-download-alt fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <div class="about__services">
+        <h2>WHAT I DO</h2>
+        <div class="services">
+          <div class="service" data-aos="zoom-in-up">
+            <img src="app/images/response.png" alt="" />
+            <h4>Responsive Design</h4>
+            <p>
+              Responsive design so your applications can be viewed on any device
+            </p>
+          </div>
+
+          <div class="service" data-aos="zoom-in-up">
+            <img src="app/images/mobile.png" alt="" />
+            <h4>Mobile Design</h4>
+            <p>
+              A great native experience is essential to reach the audience your
+              app deserves.
+            </p>
+          </div>
+          <div class="service" data-aos="zoom-in-up">
+            <img src="app/images/web dev.png" alt="" />
+            <h4>Web Development</h4>
+            <p>
+              Let's watch this thing come alive with thoughtful interactions and
+              clean HTML
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h3 class="title-section">Skills</h3>
+      <h3 class="desc">
+        The products, tools and technologies I use on a daily basis to get
+        things built
+      </h3>
+      <div class="skills__all" data-aos="fade-up" data-aos-duration="2000">
+        <div class="skill">
+          <img src="./app/images/html.png" >
+          <h4>Html 5</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/css.png" >
+          <h4>Css</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/js.png" >
+          <h4>Js</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/react.png" >
+          <h4>React</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/jquery.png" >
+          <h4>Jquery</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/sass.png" >
+          <h4>Sass</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/bootstrap.png" >
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/php.png" >
+          <h4>Php</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/sql.png" >
+          <h4>Sql</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/typescript.png" >
+          <h4>Typescript</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/node.png" >
+          <h4>Nodejs</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/vscode.png" >
+          <h4>VsCode</h4>
+        </div>
+        <div class="skill">
+          <img src="./app/images/figma.png" >
+          <h4>Figma</h4>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="work__info">
+        <img src="./app/images/work.png" alt="" data-aos="zoom-in" />
+        <div class="info">
+          <h3>YOU HAVE A NEW PROJECT</h3>
+          <p>Contact with me now and get a discount on your new project.</p>
+          <a href="#contact" class="btn">
+            Contact Me <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <h3>My Work Process</h3>
+      <div class="processes">
+        <div class="process" data-aos="fade-right">
+          <img src="./app/images/discover.png" alt="" />
+          <h4>Discover</h4>
+          <p>
+            I carry out an investigation to find out what the problem is and how
+            to solve it.
+          </p>
+        </div>
+        <div class="process" data-aos="fade-up">
+          <img src="./app/images/idea.png" alt="" />
+          <h4>Ideate</h4>
+          <p>I create sketches of the product that may interest you.</p>
+        </div>
+        <div class="process" data-aos="fade-left">
+          <img src="./app/images/implement.png" alt="" />
+          <h4>Implement</h4>
+          <p>After designing, I deliver for implementation.</p>
+        </div>
+      </div>
+    </section>
+    <div class="ribon">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-2.54,44.89 C231.09,-82.39 255.36,272.86 514.95,3.47 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none"
+        ></path>
+      </svg>
+    </div>
+    <section class="projects" id="projects">
+      <h3 class="title-section">Projects</h3>
+      <div class="desc">
+        <img src="app/images/star-project.png" alt="" />
+        <p>
+          These are some of my projects. I also have more projects in my GitHub,
+          and frontend-mentor challenges
+        </p>
+      </div>
+      <div class="projects__container">
+        <div class="layout-project">
+          <span class="number"> </span>
+          <div class="project country">
+            <div class="project__content">
+              <h3>Country App</h3>
+              <p>
+                An application that shows you important information from all
+                countries, it can be used with dark or light mode
+              </p>
+              <div class="buttons">
+                <a
+                  class="btn"
+                  href="https://country-app-portfolio.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Demo</a
+                >
+                <a
+                  class="btn"
+                  href="https://github.com/BryanMaza/Country-app"
+                  target="_blank"
+                  >Go GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-project">
+          <span class="number">  </span>
+          <div class="project preventions">
+            <div class="project__content">
+              <h3>Preventions</h3>
+              <p>
+                a website to learn more about the disease that has caused a
+                pandemic called covid-19
+              </p>
+              <div class="buttons">
+                <a
+                  class="btn"
+                  href="https://preventions.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >View Demo</a
+                >
+                <a
+                  class="btn"
+                  href="https://github.com/BryanMaza/Preventions"
+                  target="_blank"
+                  >Go GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-project">
+          <span class="number">  </span>
+          <div class="project bookmark">
+            <div class="project__content">
+              <h3>BookMark</h3>
+              <p>
+                a challenge from the frontend mentor website. A landing page
+              </p>
+              <div class="buttons">
+                <a
+                  class="btn"
+                  href="https://bookmark-frontend-mentor.netlify.app"
+                  target="_blank"
+                  >View Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/BryanMaza/bookmark-frontend-mentor"
+                  target="_blank"
+                  >Go GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-project">
+          <span class="number">  </span>
+          <div class="project todo">
+            <div class="project__content">
+              <h3>Todo app</h3>
+              <p>
+                An application for performing tasks. Users can add or delete
+                them or drag them in turn. one of the many frontend-mentor
+                challenges
+              </p>
+              <div class="buttons">
+                <a
+                  class="btn"
+                  href="https://todo-list-frontend-mentor.netlify.app"
+                  target="_blank"
+                  >View Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/BryanMaza/todo-list"
+                  target="_blank"
+                  >Go GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-project">
+          <span class="number">  </span>
+          <div class="project landing">
+            <div class="project__content">
+              <h3>Landing page</h3>
+              <p>
+                A landing page of a virtual reality product, fully responsive
+                with a solid and intuitive interface for the user
+              </p>
+              <div class="buttons">
+                <a
+                  class="btn"
+                  href="https://bryan-landing-page.netlify.app"
+                  target="_blank"
+                  >View Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/BryanMaza/Landing-Page"
+                  target="_blank"
+                  >GoGitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-project">
+          <span class="number">  </span>
+          <div class="project books">
+            <div class="project__content">
+              <h3>Books</h3>
+              <p>
+                Project to practice scroll position
+              </p>
+              <div class="buttons">
+                <a
+                  class="btn"
+                  href="https://backstage-books.netlify.app/"
+                  target="_blank"
+                  >View Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/BryanMaza/Backstage-project"  target="_blank">Go Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-project">
+          <span class="number">  </span>
+          <div class="project canal">
+            <div class="project__content">
+              <h3>Clon Canal Street</h3>
+              <p>
+                Clon to practice animations, position, layouts etc
+              </p>
+              <div class="buttons">
+                <a
+                  class="btn"
+                  href="https://clone-streetcanal.netlify.app/"
+                  target="_blank"
+                  >View Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/BryanMaza/Clon-Canal-Street"  target="_blank">Go Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h3 class="title-section">Contact</h3>
+      <div class="contact__container">
+        <div class="contact__info">
+          <img src="./app/images/client-service-3483605-2912021.png" alt="" />
+
+          <div class="info">
+            <p>
+              <span> <i class="fas fa-map-marker-alt"></i></span>Plaza castillo
+              de la mota
+            </p>
+            <p>
+              <span> <i class="fas fa-envelope"></i></span>bryanjrmz@outlook.com
+            </p>
+            <p>
+              <span><i class="fas fa-phone"></i></span>+34 602411797
+            </p>
+          </div>
+        </div>
+        <div class="contact__form">
+          <h3>LET'S TALK</h3>
+          <form method="POST" " class="form">
+            <div class="form__group">
+              <label for="name">
+                FULL NAME <span class="required">*</span></label
+              >
+              <input type="text" id="name" class="form-name" />
+              <small>Error, the field is empty</small>
+            </div>
+            <div class="form__group">
+              <label for="email">
+                EMAIL ADDRESS <span class="required">*</span></label
+              >
+              <input type="email" id="email" class="form-email" />
+              <small>Error, the field is empty</small>
+            </div>
+            <div class="form__group">
+              <label for="message"
+                >MESSAGE <span class="required">*</span></label
+              >
+              <textarea name="message" id="" cols="30" rows="10" class="form-content"></textarea>
+              <small>Error, the field is empty</small>
+            </div>
+
+            <button type="submit" class="btn btn-send ">
+              Send Message <i class="fas fa-paper-plane fa-lg"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="go-top">
+        <i class="fas fa-chevron-up fa-2x"></i>
+      </div>
+      <div class="logo-desc">
+        <h1>BJM</h1>
+        <p>FRONTEND DEVELOPER</p>
+      </div>
+      <div class="sections">
+        <ul>
+          <li  data-aos="fade-right"><a href="#home">Home</a></li>
+          <li  data-aos="fade-right"><a href="#about">About</a></li>
+          <li  data-aos="fade-right"><a href="#skills">Skills</a></li>
+          <li  data-aos="fade-right"><a href="#projects">Projects</a></li>
+          <li  data-aos="fade-right"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/BryanJairmz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/bryanjrmz/?hl=es"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a
+          href="https://es.linkedin.com/in/bryan-maza-79780a1b3"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a
+          href="https://github.com/BryanMaza"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github fa-lg"></i>
+        </a>
+
+        <div class="rights">
+          <p>® BryanMaza. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app/js/main.js"></script>
+  </body>
+</html>

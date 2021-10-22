@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.btn {
+  background: transparent;
+  color: $white;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid $white;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+
+  @include breakpoint-up("small") {
+    font-size: 1;
+    padding: 1rem 2.2rem;
+  }
+  @include breakpoint-up("medium") {
+    padding: 1.2rem 2.6rem;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: $blue;
+    z-index: -1;
+  }
+  &:active {
+    transform: scale(0.9) !important;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0px 8px 16px -1px rgba(46, 156, 202, 0.7);
+    border: 1px solid $blue;
+
+    &::before {
+      animation: btnHover 140ms ease-in-out forwards;
+    }
+  }
+
+  i {
+    margin-left: 0.7rem;
+  }
+}
+
+.title-section {
+  font-size: 0.875rem;
+  padding: 1.5rem 5rem;
+  position: relative;
+  margin-bottom: 2rem;
+  z-index: 0;
+
+  @include breakpoint-up("small") {
+    font-size: 1.2rem;
+    padding: 1.5rem 6.6rem;
+  }
+  @include breakpoint-up("medium") {
+    margin-bottom: 4rem;
+  }
+  @include breakpoint-up("xlarge") {
+    padding: 1.5rem 10rem;
+    font-size: 1.5rem;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 2.375rem;
+    height: 0.201rem;
+    background: $blue;
+    left: 2.3125rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2px;
+
+    @include breakpoint-up("small") {
+      width: 3.375rem;
+    }
+    @include breakpoint-up("xlarge") {
+      width: 3.875rem;
+      left: 5rem;
+    }
+  }
+}
+
+.ribon {
+  overflow: hidden;
+  height: 3rem;
+  top: -3rem;
+  width: 100%;
+  @include breakpoint-up("medium") {
+    height: 5rem;
+  }
+  @include breakpoint-up("large") {
+    height: 8rem;
+  }
+  svg {
+    fill: $blue-dark;
+    height: 25px;
+  }
+}
+
+.typewriter {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.1rem;
+    height: 80%;
+    border-right: 2px solid white;
+    animation: blink 0.6s linear infinite alternate;
+  }
+}
+
+.social-media {
+  a {
+    color: $white;
+
+    @include breakpoint-up("small") {
+      &:hover {
+        &:first-child {
+          color: #0d88f0;
+        }
+        &:nth-child(2) {
+          color: #c13584;
+        }
+        &:nth-child(3) {
+          color: #0d88f0;
+        }
+      }
+    }
+    i {
+      @include breakpoint-up("medium") {
+        transform: scale(1.3);
+        &:hover {
+          transform: scale(1.6);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.about {
+  background: $blue-dark;
+  color: white;
+  @include breakpoint-up("small") {
+    padding: 1rem 0;
+  }
+  @include breakpoint-up("medium") {
+    padding: 1rem 0 4rem 0;
+  }
+
+  @include breakpoint-up("large") {
+    padding: 3rem 5rem 6rem 5rem;
+  }
+
+  &__info {
+    text-align: center;
+    margin: 0 2rem;
+    @include breakpoint-up("medium") {
+      display: flex;
+      margin: 2rem auto;
+    }
+    @include breakpoint-up("xlarge") {
+      align-items: center;
+      max-width: 75rem;
+      margin-bottom: 6rem;
+    }
+    .img-container {
+      flex: 1;
+      max-height: 27.25rem;
+      @include breakpoint-up("large") {
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+        height: 25rem;
+        margin-bottom: 2rem;
+        @include breakpoint-up("large") {
+          height: 38rem;
+
+          object-fit: contain;
+        }
+      }
+    }
+    .desc {
+      @include breakpoint-up("small") {
+        padding: 0 4rem;
+      }
+      @include breakpoint-up("medium") {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+      @include breakpoint-up("large") {
+        text-align: left;
+      }
+
+      h2 {
+        color: $blue;
+        margin-bottom: 1.1rem;
+        letter-spacing: 0.031rem;
+        @include breakpoint-up("medium") {
+          font-size: 1.8rem;
+        }
+        @include breakpoint-up("large") {
+          font-size: 3rem;
+        }
+      }
+      p {
+        text-align: left;
+        font-size: 0.875rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        letter-spacing: 0.031rem;
+        @include breakpoint-up("large") {
+          max-width: 64ch;
+          margin: 1rem 0;
+        }
+        @include breakpoint-up("xlarge") {
+          font-size: 1rem;
+        }
+      }
+      & > a {
+        margin: 1.5625rem 0 4.1875rem 0;
+
+        @include breakpoint-up("large") {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__services {
+    @include breakpoint-up("medium") {
+      padding-bottom: 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      @include breakpoint-up("medium") {
+        border: 1px solid transparent;
+        font-size: 2rem;
+      }
+      @include breakpoint-up("xlarge") {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .services {
+      padding: 2rem 0;
+      @include breakpoint-up("medium") {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+      }
+      @include breakpoint-up("large") {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 3rem;
+      }
+      .service {
+        text-align: center;
+        padding: 1.3rem 3.1875rem;
+
+        &:not(:first-child) {
+          border-top: 1px solid $white;
+        }
+        @include breakpoint-up("small") {
+          margin-bottom: 1rem;
+        }
+        @include breakpoint-up("medium") {
+          padding: 1rem;
+
+          &:not(:first-child) {
+            border-top: 1px solid transparent;
+          }
+        }
+        @include breakpoint-up("large") {
+          &:not(:first-child) {
+            margin-left: 4rem;
+          }
+        }
+
+        & > img {
+          width: 3.75rem;
+          height: 3.75rem;
+          margin: 1.5rem 0;
+          @include breakpoint-up("xlarge") {
+            width: 5.25rem;
+            height: 5.25rem;
+          }
+        }
+        & > h4 {
+          font-size: 1rem;
+          color: $blue;
+          margin-bottom: 0.5rem;
+          @include breakpoint-up("small") {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+          }
+          @include breakpoint-up("xlarge") {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+        }
+        & > p {
+          font-size: 0.875rem;
+          margin-bottom: 0.875rem;
+          @include breakpoint-up("small") {
+            margin-bottom: 1rem;
+            max-width: 35ch;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
